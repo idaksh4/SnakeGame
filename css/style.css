@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/bg.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score{
+    position: absolute;
+    top: 15px;
+    right: 120px;
+}
+
+#scoreBox{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#hiscoreBox{
+    padding: 10px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#box{
+    display: flex;
+    /* background-color: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%); */
+    background: url(../img/grid.png);
+    background-color: rgb(97, 207, 12, 0.733);
+    background-repeat: no-repeat;
+    background-size: 90vmin;
+    width: 90vmin;
+    height: 90vmin;
+    position: absolute;
+    /* top: 50px; */
+    left: 20vw;
+    /* right: 50px; */
+    /* bottom: 50px; */
+}
+
+#board{
+    width: 90vmin;
+    height: 90vmin;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(red, purple);
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 50%;
+}
+
+.snake{
+    background: linear-gradient(blue, yellow);
+    border: .25vmin solid white;
+    border-radius: 50%;
+}
+
+.food{
+    background: linear-gradient(red, black);
+    border: .25vmin solid black;
+    border-radius: 50%;
+}
